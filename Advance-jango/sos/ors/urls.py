@@ -28,6 +28,13 @@ urlpatterns = [
     path('singUp/', views.sing_up),
     path('singIn/', views.singIn),
     path('testlist/', views.test_list),
+    path('userlist/', views.user_list),
+    path('AddUser/', views.Add),
+    path('delete/<int:id>/', views.delete_user),
+    path('edit/<int:id>/', views.edit_user),
+
     path('logout/', views.logout)
 
+
 ]
+

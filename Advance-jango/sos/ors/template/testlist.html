@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% include "header.html" %}
+<form>
+
+    <div align="center">
+        <table>
+            <tr>
+                <th>Id</th>
+                <th>FirstName</th>
+                <th>LastName</th>
+                <th>Email</th>
+                <th>Password</th>
+            </tr>
+
+            {% for l in list %}
+            <tr align="center">
+                <td>{{ l.id }}</td>
+                <td>{{ l.firstName }}</td>
+                <td>{{ l.lastName }}</td>
+                <td>{{ l.email }}</td>
+                <td>{{ l.password }}</td>
+                <td>{{l.address}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+
+    </div>
+</form>
+
+</body>
+</html>
